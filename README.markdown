@@ -14,6 +14,10 @@ Installation(Dynamic):
 	./configure --add-dynamic-module=/path/to/this/directory
 	make modules
 	cp objs/ngx_http_upstream_jdomain_module.so /path/to/nginx/modules
+	
+Remember to add the module to your modules config:
+
+	load_module modules/ngx_my_module.so;
 
 Usage:
 
