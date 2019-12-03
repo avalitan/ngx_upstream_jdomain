@@ -3,11 +3,17 @@ ngx_upstream_jdomain
 
 An asynchronous domain name resolve module for nginx upstream
 
-Installation:
+Installation(Static):
 
 	./configure --add-module=/path/to/this/directory
 	make
 	make install
+
+Installation(Dynamic):
+
+	./configure --add-dynamic-module=/path/to/this/directory
+	make modules
+	cp objs/ngx_http_upstream_jdomain_module.so /path/to/nginx/modules
 
 Usage:
 
